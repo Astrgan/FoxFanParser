@@ -37,7 +37,7 @@ public class FoxFanParser {
 
             statement.setString(1, "Rick and Morty");
             statement.setString(2, "Рик и Морти");
-            statement.setInt(3, 3);
+            statement.setInt(3, Integer.parseInt(URL.substring(URL.length() - 1)));
 
 
             Element table = doc.select("table").get(2); //select the first table.
