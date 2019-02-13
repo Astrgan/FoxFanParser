@@ -14,6 +14,8 @@ public class FoxFanParser {
 
     public FoxFanParser(String URL) {
 
+        String id = "ram";
+        String season = URL.substring(URL.length() - 1);
 
         Properties connInfo = new Properties();
         connInfo.put("user", "alex");
@@ -26,7 +28,7 @@ public class FoxFanParser {
 
         try(
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/MultGo?", connInfo);
-                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description) VALUE (?, ?, ?, ?, ?, ?)")
+                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon) VALUE (?, ?, ?, ?, ?, ?, ?)")
         ){
             doc = Jsoup
                     .connect(URL)
@@ -37,7 +39,7 @@ public class FoxFanParser {
 
             statement.setString(1, "Rick and Morty");
             statement.setString(2, "Рик и Морти");
-            statement.setInt(3, Integer.parseInt(URL.substring(URL.length() - 1)));
+            statement.setInt(3, Integer.parseInt(season));
 
 
             Element table = doc.select("table").get(2); //select the first table.
@@ -51,6 +53,7 @@ public class FoxFanParser {
                     statement.setString(5, rows.get(i).select("a").get(1).text());
                 }catch (Exception e){
                     System.out.println(rows.get(i).select("td").first().text());
+                    statement.setString(7, id+"_s"+season+"e"+ep);
                     statement.setInt(4, ep++);
                     statement.setString(6, rows.get(i).select("td").first().text());
                     System.out.println(statement);
