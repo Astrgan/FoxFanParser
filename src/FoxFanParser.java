@@ -28,7 +28,7 @@ public class FoxFanParser {
 
         try(
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/MultGo?", connInfo);
-                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon) VALUE (?, ?, ?, ?, ?, ?, ?)")
+                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon, id_cartoon) VALUE (?, ?, ?, ?, ?, ?, ?, ?)")
         ){
             doc = Jsoup
                     .connect(URL)
@@ -54,6 +54,7 @@ public class FoxFanParser {
                 }catch (Exception e){
                     System.out.println(rows.get(i).select("td").first().text());
                     statement.setString(7, id+"_s"+season+"e"+ep);
+                    statement.setInt(8, (10000*1)+(100*Integer.parseInt(season))+ep);
                     statement.setInt(4, ep++);
                     statement.setString(6, rows.get(i).select("td").first().text());
                     System.out.println(statement);

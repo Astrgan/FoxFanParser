@@ -6,7 +6,7 @@ use MultGo;
 
 
 create table cartoons(
-	id_cartoon int not null auto_increment,
+	id_cartoon int not null,
   name_cartoon varchar(30),
   name_episode varchar(100),
   name_cartoon_rus varchar(30),
