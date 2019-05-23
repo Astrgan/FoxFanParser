@@ -6,17 +6,19 @@ use MultGo;
 
 
 create table cartoons(
-	id_cartoon int not null,
-  name_cartoon varchar(30),
-  name_episode varchar(100),
-  name_cartoon_rus varchar(30),
+    id_cartoon int not null auto_increment,
+    name_cartoon varchar(30),
+    name_episode varchar(100),
+    name_cartoon_rus varchar(30),
 	season int(2) not null,
-  episode int (2),
-  description varchar(1000),
+    episode int (2),
+    description varchar(1000),
 	release_date date,
-  abbreviation varchar(5),
-  ratung int (3),
-  index_cartoon varchar(10),
+    abbreviation varchar(5),
+    rating int (3),
+    index_cartoon varchar(10),
+    link_name varchar(30),
+    shot_name varchar(10),
 
   PRIMARY KEY (id_cartoon)
 )ENGINE=InnoDB CHARACTER SET=UTF8;
