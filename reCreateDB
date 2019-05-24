@@ -15,7 +15,7 @@ create table cartoons(
     description varchar(1000),
 	release_date date,
     abbreviation varchar(5),
-    rating int (3),
+    rating int (3) default 0,
     index_cartoon varchar(10),
     link_name varchar(30),
     shot_name varchar(10),
