@@ -135,7 +135,27 @@ public class FoxFanParser {
                 intCode = 30000;
                 link_name = "paradisepd";
                 break;
-
+            case "simpsons.fox-fan.tv":
+                this.id  = "ts";
+                cartoonName = "The Simpsons";
+                rusCartoonName = "Симпсоны";
+                intCode = 40000;
+                link_name = "thesimpsons";
+                break;
+            case "familyguy.fox-fan.tv":
+                this.id  = "fg";
+                cartoonName = "Family Guy";
+                rusCartoonName = "Гриффины";
+                intCode = 50000;
+                link_name = "familyguy";
+                break;
+            case "americandad.fox-fan.tv":
+                this.id  = "ad";
+                cartoonName = "American dad!";
+                rusCartoonName = "Американский папаша!";
+                intCode = 60000;
+                link_name = "americandad";
+                break;
         }
 
     }
