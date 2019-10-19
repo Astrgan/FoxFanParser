@@ -19,8 +19,10 @@ public class FoxFanParser {
     String cartoonName, rusCartoonName;
     int intCode;
     String link_name;
+    String chanel;
 
     public FoxFanParser(String seasonsURL, int season) {
+
 
         try {
 
@@ -45,8 +47,8 @@ public class FoxFanParser {
 
 
         try(
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/MultGo?", connInfo);
-                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon, id_cartoon, shot_name, link_name) VALUE (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/MultGo2?", connInfo);
+                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon, id_cartoon, shot_name, link_name, chanel) VALUE (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
         ){
             doc = Jsoup
                     .connect(seasonsURL+season)
@@ -77,10 +79,11 @@ public class FoxFanParser {
                     statement.setString(10, this.link_name);
                     statement.setInt(4, ep);
                     statement.setString(6, rows.get(i).select("td").first().text());
+                    statement.setString(11, chanel);
                     System.out.println(statement);
                     statement.executeUpdate();
 
-                    getImage(preURL, ep+(100*season));
+                    //getImage(preURL, ep+(100*season));
 
                     ep++;
                 }
@@ -120,6 +123,7 @@ public class FoxFanParser {
                 rusCartoonName = "Рик и Морти";
                 intCode = 10000;
                 link_name = "rickandmorty";
+                chanel = "Cartoon network";
                 break;
             case "southpark.cc-fan.tv":
                 this.id  = "sp";
@@ -127,6 +131,7 @@ public class FoxFanParser {
                 rusCartoonName = "Южный парк";
                 intCode = 20000;
                 link_name = "southpark";
+                chanel = "Comedy central";
                 break;
             case "paradise.nf-fan.tv":
                 this.id  = "ppd";
@@ -134,6 +139,7 @@ public class FoxFanParser {
                 rusCartoonName = "полиция парадайз";
                 intCode = 30000;
                 link_name = "paradisepd";
+                chanel = "Netflix";
                 break;
             case "simpsons.fox-fan.tv":
                 this.id  = "ts";
@@ -141,6 +147,7 @@ public class FoxFanParser {
                 rusCartoonName = "Симпсоны";
                 intCode = 40000;
                 link_name = "thesimpsons";
+                chanel = "FOX";
                 break;
             case "familyguy.fox-fan.tv":
                 this.id  = "fg";
@@ -148,6 +155,7 @@ public class FoxFanParser {
                 rusCartoonName = "Гриффины";
                 intCode = 50000;
                 link_name = "familyguy";
+                chanel = "FOX";
                 break;
             case "americandad.fox-fan.tv":
                 this.id  = "ad";
@@ -155,6 +163,7 @@ public class FoxFanParser {
                 rusCartoonName = "Американский папаша!";
                 intCode = 60000;
                 link_name = "americandad";
+                chanel = "FOX";
                 break;
         }
 

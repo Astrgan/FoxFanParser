@@ -1,8 +1,8 @@
 #mysql.server restart
 
-drop database if exists MultGo;
-create database MultGo;
-use MultGo;
+drop database if exists MultGo2;
+create database MultGo2;
+use MultGo2;
 
 
 create table cartoons(
@@ -12,12 +12,13 @@ create table cartoons(
     name_cartoon_rus varchar(30),
 	season int(2) not null,
     episode int (2),
-    description varchar(1000),
+    description varchar(2000),
 	release_date date,
     rating int (3) default 0,
     index_cartoon varchar(10),
     link_name varchar(30),
     shot_name varchar(10),
+    chanel varchar(20),
 
   PRIMARY KEY (id_cartoon)
 )ENGINE=InnoDB CHARACTER SET=UTF8;
