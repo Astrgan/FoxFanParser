@@ -48,7 +48,7 @@ public class FoxFanParser {
 
         try(
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/MultGo2?", connInfo);
-                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon, id_cartoon, shot_name, link_name, chanel) VALUE (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
+                PreparedStatement statement = connection.prepareStatement("INSERT INTO cartoons (name_cartoon, name_cartoon_rus, season, episode, name_episode, description, index_cartoon, id_cartoon, shot_name, link_name, channel) VALUE (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
         ){
             doc = Jsoup
                     .connect(seasonsURL+season)

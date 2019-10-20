@@ -18,7 +18,7 @@ create table cartoons(
     index_cartoon varchar(10),
     link_name varchar(30),
     shot_name varchar(10),
-    chanel varchar(20),
+    channel varchar(20),
 
   PRIMARY KEY (id_cartoon)
 )ENGINE=InnoDB CHARACTER SET=UTF8;
