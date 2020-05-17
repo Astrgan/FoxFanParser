@@ -1,4 +1,4 @@
-import com.sun.org.apache.bcel.internal.generic.NEW;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -42,6 +42,7 @@ public class FoxFanParser {
         connInfo.put("password", "angel");
         connInfo.put("useUnicode","true"); // (1)
         connInfo.put("charSet", "UTF8"); // (2)
+        connInfo.put("useSSL", "false");
 
 
 
@@ -117,7 +118,7 @@ public class FoxFanParser {
     void setCartoonCode(String str){
         System.out.println(str);
         switch (str) {
-            case "rickandmorty.cn-fan.ru":
+            case "rickandmorty.cn-fan.tv":
                 this.id = "ram";
                 cartoonName = "Rick and Morty";
                 rusCartoonName = "Рик и Морти";
@@ -163,6 +164,78 @@ public class FoxFanParser {
                 rusCartoonName = "Американский папаша!";
                 intCode = 60000;
                 link_name = "americandad";
+                chanel = "FOX";
+                break;
+            case "clevelandshow.fox-fan.tv":
+                this.id  = "ch";
+                cartoonName = "Cleveland show";
+                rusCartoonName = "Шоу Кливленда";
+                intCode = 70000;
+                link_name = "clevelandshow";
+                chanel = "FOX";
+                break;
+            case "futurama.fox-fan.tv":
+                this.id  = "futurama";
+                cartoonName = "Futurama";
+                rusCartoonName = "Футурама";
+                intCode = 80000;
+                link_name = "futurama";
+                chanel = "FOX";
+                break;
+            case "duncanville.fox-fan.tv":
+                this.id  = "duncanville";
+                cartoonName = "Duncanville";
+                rusCartoonName = "Данканвилл";
+                intCode = 90000;
+                link_name = "duncanville";
+                chanel = "FOX";
+                break;
+            case "blesstheharts.fox-fan.tv":
+                this.id  = "bth";
+                cartoonName = "Bless the Harts";
+                rusCartoonName = "Благословите Хартов";
+                intCode = 100000;
+                link_name = "BlesstheHarts";
+                chanel = "FOX";
+                break;
+            case "bordertown.fox-fan.tv":
+                this.id  = "bordertown";
+                cartoonName = "Bordertown";
+                rusCartoonName = "Приграничный городок";
+                intCode = 110000;
+                link_name = "bordertown";
+                chanel = "FOX";
+                break;
+            case "bobsburgers.fox-fan.tv":
+                this.id  = "bb";
+                cartoonName = "Bob's burgers";
+                rusCartoonName = "Бургеры Боба";
+                intCode = 120000;
+                link_name = "Bobsburgers";
+                chanel = "FOX";
+                break;
+            case "kingofthehill.fox-fan.tv":
+                this.id  = "koth";
+                cartoonName = "King of the Hill";
+                rusCartoonName = "Царь горы";
+                intCode = 130000;
+                link_name = "kingofthehill";
+                chanel = "FOX";
+                break;
+            case "ldr.nf-fan.tv":
+                this.id  = "ldar";
+                cartoonName = "Love, Death & Robots";
+                rusCartoonName = "Любовь, смерть и роботы";
+                intCode = 140000;
+                link_name = "lovedeathandrobots";
+                chanel = "FOX";
+                break;
+            case "family.nf-fan.tv":
+                this.id  = "fiff";
+                cartoonName = "F Is for Family";
+                rusCartoonName = "С значит Семья";
+                intCode = 150000;
+                link_name = "fisforfamily";
                 chanel = "FOX";
                 break;
         }
