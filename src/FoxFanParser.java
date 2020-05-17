@@ -5,11 +5,20 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.FileChannel;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.EnumSet;
 import java.util.Properties;
 
 public class FoxFanParser {
@@ -63,17 +72,17 @@ public class FoxFanParser {
             statement.setInt(3, season);
 
 
-            Element table = doc.select("table").get(2); //select the first table.
+            Element table = doc.select("table").get(1); //select the first table.
             Elements rows = table.select("tr");
 
             int ep = 1;
             for (int i = 0; i < rows.size(); i++) {
 
                 try {
-                    System.out.println(rows.get(i).select("a").get(1).text());
+//                    System.out.println(rows.get(i).select("a").get(1).text());
                     statement.setString(5, rows.get(i).select("a").get(1).text());
                 }catch (Exception e){
-                    System.out.println(rows.get(i).select("td").first().text());
+//                    System.out.println(rows.get(i).select("td").first().text());
                     statement.setString(7, id+"_s"+season+"e"+ep);
                     statement.setInt(8, (intCode*1)+(100*season)+ep);
                     statement.setString(9, this.id);
@@ -81,10 +90,10 @@ public class FoxFanParser {
                     statement.setInt(4, ep);
                     statement.setString(6, rows.get(i).select("td").first().text());
                     statement.setString(11, chanel);
-                    System.out.println(statement);
-                    statement.executeUpdate();
+//                    System.out.println(statement);
+//                    statement.executeUpdate();
 
-                    //getImage(preURL, ep+(100*season));
+                    getImage(preURL, ep+(100*season));
 
                     ep++;
                 }
@@ -101,19 +110,45 @@ public class FoxFanParser {
 
 
             URL URLimage = new URL("http://"+preURL.getHost()+"/seasons/" + episode + "_big.jpg");
+            System.out.println(URLimage);
+//            InputStream in = URLimage.openStream();
+//            OutputStream out = new BufferedOutputStream(new FileOutputStream("img/"+this.id+"/"+episode+".jpg"));
+//            for (int b; (b = in.read()) != -1; ) {
+//                out.write(b);
+//            }
+//            out.close();
+//            in.close();
+//            ReadableByteChannel readableByteChannel = Channels.newChannel(URLimage.openStream());
+//            FileOutputStream fileOutputStream = new FileOutputStream("img/"+this.id+"/"+episode+".jpg");
+//            FileChannel fileChannel = fileOutputStream.getChannel();
+//            fileOutputStream.getChannel().transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
+//            fileOutputStream.close();
 
-            InputStream in = URLimage.openStream();
-            OutputStream out = new BufferedOutputStream(new FileOutputStream("img/"+this.id+"/"+episode+".jpg"));
-            for (int b; (b = in.read()) != -1; ) {
-                out.write(b);
-            }
-            out.close();
-            in.close();
+            download(URLimage.toURI(), "img/"+this.id+"/"+episode+".jpg");
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    public File download(URI uri, String fileName) throws IOException {
+        Path path = Paths.get(fileName);
+        long totalBytesRead = 0L;
+        HttpURLConnection con = (HttpURLConnection) uri.resolve(fileName).toURL().openConnection();
+        con.setReadTimeout(10000);
+        con.setConnectTimeout(10000);
+        try (ReadableByteChannel rbc = Channels.newChannel(con.getInputStream());
+             FileChannel fileChannel = FileChannel.open(path, EnumSet.of(StandardOpenOption.CREATE, StandardOpenOption.WRITE));) {
+            totalBytesRead = fileChannel.transferFrom(rbc, 0, 1 << 22); // download file with max size 4MB
+            System.out.println("totalBytesRead = " + totalBytesRead);
+            fileChannel.close();
+            rbc.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return path.toFile();
+    }
+
 
     void setCartoonCode(String str){
         System.out.println(str);
@@ -175,7 +210,7 @@ public class FoxFanParser {
                 chanel = "FOX";
                 break;
             case "futurama.fox-fan.tv":
-                this.id  = "futurama";
+                this.id  = "fut";
                 cartoonName = "Futurama";
                 rusCartoonName = "Футурама";
                 intCode = 80000;
@@ -183,7 +218,7 @@ public class FoxFanParser {
                 chanel = "FOX";
                 break;
             case "duncanville.fox-fan.tv":
-                this.id  = "duncanville";
+                this.id  = "dun";
                 cartoonName = "Duncanville";
                 rusCartoonName = "Данканвилл";
                 intCode = 90000;
@@ -199,7 +234,7 @@ public class FoxFanParser {
                 chanel = "FOX";
                 break;
             case "bordertown.fox-fan.tv":
-                this.id  = "bordertown";
+                this.id  = "bort";
                 cartoonName = "Bordertown";
                 rusCartoonName = "Приграничный городок";
                 intCode = 110000;
@@ -228,7 +263,7 @@ public class FoxFanParser {
                 rusCartoonName = "Любовь, смерть и роботы";
                 intCode = 140000;
                 link_name = "lovedeathandrobots";
-                chanel = "FOX";
+                chanel = "Netflix";
                 break;
             case "family.nf-fan.tv":
                 this.id  = "fiff";
@@ -236,7 +271,23 @@ public class FoxFanParser {
                 rusCartoonName = "С значит Семья";
                 intCode = 150000;
                 link_name = "fisforfamily";
-                chanel = "FOX";
+                chanel = "Netflix";
+                break;
+            case "adventuretime.cn-fan.tv":
+                this.id  = "at";
+                cartoonName = "Adventure time";
+                rusCartoonName = "Время приключений";
+                intCode = 160000;
+                link_name = "adventuretime";
+                chanel = "Cartoon network";
+                break;
+            case "mrpickles.cn-fan.tv":
+                this.id  = "mp";
+                cartoonName = "Mr. Pickles";
+                rusCartoonName = "Мистер пиклз";
+                intCode = 170000;
+                link_name = "mrpickles";
+                chanel = "Cartoon network";
                 break;
         }
 
