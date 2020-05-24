@@ -10,7 +10,7 @@ public class Main {
         if (cartoons.exists()) {
             cartoons.mkdir();
         }
-
+/*
         for(int i=0; i<4; i++){
             new FoxFanVideoDownloader("http://rickandmorty.cn-fan.tv/season.php?id=",(i+1));
         }
@@ -57,7 +57,7 @@ public class Main {
         for(int i=0; i<10; i++){
             new FoxFanVideoDownloader("https://bobsburgers.fox-fan.tv/season.php?id=",(i+1));
         }
-
+*/
         for(int i=0; i<13; i++){
             new FoxFanVideoDownloader("https://kingofthehill.fox-fan.tv/season.php?id=",(i+1));
         }
@@ -73,11 +73,11 @@ public class Main {
         for(int i=0; i<3; i++){
             new FoxFanVideoDownloader("https://family.nf-fan.tv/season.php?id=",(i+1));
         }
-
+/*
         for(int i=0; i<10; i++){
             new FoxFanVideoDownloader("https://adventuretime.cn-fan.tv/season.php?id=",(i+1));
         }
-
+*/
 //        for(int i=0; i<3; i++){
 //            new FoxFanVideoDownloader("https://brickleberry.cc-fan.tv/season.php?id=",(i+1));
 //        }
