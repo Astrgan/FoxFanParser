@@ -51,7 +51,12 @@ public class FoxFanVideoDownloader {
             Elements rows = table.select("tr");
 
 
+            File cartoons = new File("cartoons/" + link_name);
+            if (!cartoons.exists()) cartoons.mkdir();
+            File seasonFolder = new File(cartoons.getPath() + "/season" + season);
+            if (!seasonFolder.exists()) seasonFolder.mkdir();
 
+            PrintWriter out = new PrintWriter(seasonFolder.getAbsolutePath() + "/" +  "listURL.txt");;
             for (ep = 0; ep < rows.size(); ep++) {
 
                 try {
@@ -71,12 +76,10 @@ public class FoxFanVideoDownloader {
                     String videoLink = str.substring(str.lastIndexOf(",\"")+2, str.lastIndexOf("\""));
                     Connection.Response response = Jsoup.connect(link).followRedirects(true).execute();
                     redLink = response.url().toString();
-                    System.out.println("rederec url");
 
-                    File cartoons = new File("cartoons/" + link_name);
-                    if (!cartoons.exists()) cartoons.mkdir();
-                    File seasonFolder = new File(cartoons.getPath() + "/season" + season);
-                    if (!seasonFolder.exists()) seasonFolder.mkdir();
+                    System.out.println("rederec: " + redLink);
+                    out.println(redLink);
+/*
 
                     File coockie = new File("cookie"+threads+".txt");
 
@@ -89,6 +92,7 @@ public class FoxFanVideoDownloader {
                     System.out.println(command);
                     p = Runtime.getRuntime().exec(command);
                     exitVal = p.waitFor();
+*/
 
 
 
@@ -128,8 +132,9 @@ public class FoxFanVideoDownloader {
                 }catch (Exception e){
 
                 }
-                break;
-            }
+
+            }//for
+            out.close();
         } catch (Exception e) {
 //            e.printStackTrace();
         }

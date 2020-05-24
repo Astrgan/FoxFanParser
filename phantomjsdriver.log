@@ -1,0 +1,105 @@
+[INFO  - 2020-05-23T13:17:37.292Z] GhostDriver - Main - running on port 36736
+[INFO  - 2020-05-23T13:17:37.899Z] Session [c5e11860-9cf7-11ea-9afa-a7a8a4ded9fd] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:17:37.899Z] Session [c5e11860-9cf7-11ea-9afa-a7a8a4ded9fd] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:17:37.899Z] Session [c5e11860-9cf7-11ea-9afa-a7a8a4ded9fd] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:17:37.899Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c5e11860-9cf7-11ea-9afa-a7a8a4ded9fd
+[INFO  - 2020-05-23T13:17:37.999Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:18:28.469Z] GhostDriver - Main - running on port 15162
+[INFO  - 2020-05-23T13:18:28.893Z] Session [e445b450-9cf7-11ea-a12a-fb0c72ae6b22] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:18:28.894Z] Session [e445b450-9cf7-11ea-a12a-fb0c72ae6b22] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:18:28.894Z] Session [e445b450-9cf7-11ea-a12a-fb0c72ae6b22] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:18:28.894Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e445b450-9cf7-11ea-a12a-fb0c72ae6b22
+[INFO  - 2020-05-23T13:18:28.986Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:31:36.980Z] GhostDriver - Main - running on port 3023
+[INFO  - 2020-05-23T13:31:37.400Z] Session [ba427a10-9cf9-11ea-b11e-0b28349965a1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:31:37.400Z] Session [ba427a10-9cf9-11ea-b11e-0b28349965a1] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:31:37.400Z] Session [ba427a10-9cf9-11ea-b11e-0b28349965a1] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:31:37.401Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ba427a10-9cf9-11ea-b11e-0b28349965a1
+[INFO  - 2020-05-23T13:31:37.514Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:34:36.218Z] GhostDriver - Main - running on port 35475
+[INFO  - 2020-05-23T13:34:36.572Z] Session [250e1b60-9cfa-11ea-a140-113d2eca3872] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:34:36.572Z] Session [250e1b60-9cfa-11ea-a140-113d2eca3872] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:34:36.572Z] Session [250e1b60-9cfa-11ea-a140-113d2eca3872] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:34:36.573Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 250e1b60-9cfa-11ea-a140-113d2eca3872
+[INFO  - 2020-05-23T13:34:36.669Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:35:58.899Z] GhostDriver - Main - running on port 36359
+[INFO  - 2020-05-23T13:35:59.296Z] Session [565ca290-9cfa-11ea-9055-472a2efcd53f] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:35:59.296Z] Session [565ca290-9cfa-11ea-9055-472a2efcd53f] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:35:59.296Z] Session [565ca290-9cfa-11ea-9055-472a2efcd53f] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:35:59.296Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 565ca290-9cfa-11ea-9055-472a2efcd53f
+[INFO  - 2020-05-23T13:35:59.403Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:37:29.652Z] GhostDriver - Main - running on port 35624
+[INFO  - 2020-05-23T13:37:30.246Z] Session [8c91e4b0-9cfa-11ea-9ddc-c175e8b0c688] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:37:30.249Z] Session [8c91e4b0-9cfa-11ea-9ddc-c175e8b0c688] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:37:30.249Z] Session [8c91e4b0-9cfa-11ea-9ddc-c175e8b0c688] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:37:30.249Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 8c91e4b0-9cfa-11ea-9ddc-c175e8b0c688
+[INFO  - 2020-05-23T13:37:30.346Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:38:01.559Z] GhostDriver - Main - running on port 9778
+[INFO  - 2020-05-23T13:38:01.994Z] Session [9f7e8f10-9cfa-11ea-8b65-d3fefa6e9b1d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:38:01.995Z] Session [9f7e8f10-9cfa-11ea-8b65-d3fefa6e9b1d] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:38:01.996Z] Session [9f7e8f10-9cfa-11ea-8b65-d3fefa6e9b1d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:38:01.996Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9f7e8f10-9cfa-11ea-8b65-d3fefa6e9b1d
+[INFO  - 2020-05-23T13:38:02.086Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:39:32.340Z] GhostDriver - Main - running on port 22485
+[INFO  - 2020-05-23T13:39:32.670Z] Session [d58b3a90-9cfa-11ea-b27d-21cc7d5b8c6b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:39:32.671Z] Session [d58b3a90-9cfa-11ea-b27d-21cc7d5b8c6b] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:39:32.671Z] Session [d58b3a90-9cfa-11ea-b27d-21cc7d5b8c6b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:39:32.671Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d58b3a90-9cfa-11ea-b27d-21cc7d5b8c6b
+[INFO  - 2020-05-23T13:39:32.761Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:40:33.640Z] GhostDriver - Main - running on port 8154
+[INFO  - 2020-05-23T13:40:34.176Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:40:34.176Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:40:34.177Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:40:34.177Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fa344cb0-9cfa-11ea-af11-8bc6b70b173e
+[ERROR - 2020-05-23T13:40:35.215Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2020-05-23T13:40:35.215Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:51)
+[ERROR - 2020-05-23T13:40:35.216Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2020-05-23T13:40:35.216Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:65)
+[ERROR - 2020-05-23T13:40:35.217Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2020-05-23T13:40:35.217Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:135)
+[ERROR - 2020-05-23T13:40:35.236Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - msg: ReferenceError: Can't find variable: Playerjs
+[ERROR - 2020-05-23T13:40:35.236Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:328)
+[ERROR - 2020-05-23T13:40:36.341Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - msg: TypeError: undefined is not an object (evaluating 'player.api')
+[ERROR - 2020-05-23T13:40:36.341Z] Session [fa344cb0-9cfa-11ea-af11-8bc6b70b173e] - page.onError - stack:
+  adBlockDetected (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:756)
+  onerror (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:775)
+[INFO  - 2020-05-23T13:40:36.737Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:44:22.466Z] GhostDriver - Main - running on port 12047
+[INFO  - 2020-05-23T13:44:22.772Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:44:22.773Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:44:22.773Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:44:22.773Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 827547f0-9cfb-11ea-8384-f3d7db2808b4
+[ERROR - 2020-05-23T13:44:23.547Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2020-05-23T13:44:23.547Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:51)
+[ERROR - 2020-05-23T13:44:23.548Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2020-05-23T13:44:23.548Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:65)
+[ERROR - 2020-05-23T13:44:23.550Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2020-05-23T13:44:23.550Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:135)
+[ERROR - 2020-05-23T13:44:23.563Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - msg: ReferenceError: Can't find variable: Playerjs
+[ERROR - 2020-05-23T13:44:23.564Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:328)
+[ERROR - 2020-05-23T13:44:28.343Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - msg: TypeError: undefined is not an object (evaluating 'player.api')
+[ERROR - 2020-05-23T13:44:28.343Z] Session [827547f0-9cfb-11ea-8384-f3d7db2808b4] - page.onError - stack:
+  adBlockDetected (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:756)
+  onerror (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:775)
+[INFO  - 2020-05-23T13:44:28.432Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2020-05-23T13:50:37.913Z] GhostDriver - Main - running on port 13385
+[INFO  - 2020-05-23T13:50:38.451Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-23T13:50:38.452Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - page.customHeaders:  - {}
+[INFO  - 2020-05-23T13:50:38.452Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-23T13:50:38.452Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 6260e3b0-9cfc-11ea-8f81-7d8eb5192638
+[ERROR - 2020-05-23T13:50:39.243Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - page.onError - msg: ReferenceError: Can't find variable: Playerjs
+[ERROR - 2020-05-23T13:50:39.243Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - page.onError - stack:
+  global code (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:328)
+[ERROR - 2020-05-23T13:50:40.228Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - page.onError - msg: TypeError: undefined is not an object (evaluating 'player.api')
+[ERROR - 2020-05-23T13:50:40.228Z] Session [6260e3b0-9cfc-11ea-8f81-7d8eb5192638] - page.onError - stack:
+  adBlockDetected (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:756)
+  onerror (file:///Users/alex/Documents/Development/MyWEB/FoxFanParser/page.html:775)
+[INFO  - 2020-05-23T13:50:40.852Z] ShutdownReqHand - _handle - About to shutdown
