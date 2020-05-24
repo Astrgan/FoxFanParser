@@ -72,7 +72,7 @@ public class FoxFanParser {
             statement.setInt(3, season);
 
 
-            Element table = doc.select("table").get(1); //select the first table.
+            Element table = doc.select("table").get(2); //select the first table.
             Elements rows = table.select("tr");
 
             int ep = 1;
@@ -90,10 +90,9 @@ public class FoxFanParser {
                     statement.setInt(4, ep);
                     statement.setString(6, rows.get(i).select("td").first().text());
                     statement.setString(11, chanel);
-//                    System.out.println(statement);
-//                    statement.executeUpdate();
-
-                    getImage(preURL, ep+(100*season));
+                    System.out.println(statement);
+                    statement.executeUpdate();
+//                    getImage(preURL, ep+(100*season));
 
                     ep++;
                 }
@@ -288,6 +287,14 @@ public class FoxFanParser {
                 intCode = 170000;
                 link_name = "mrpickles";
                 chanel = "Cartoon network";
+                break;
+            case "brickleberry.cc-fan.tv":
+                this.id  = "bric";
+                cartoonName = "Brickleberry";
+                rusCartoonName = "Бриклберри";
+                intCode = 180000;
+                link_name = "brickleberry";
+                chanel = "Comedy central";
                 break;
         }
 

@@ -1,7 +1,15 @@
+import java.io.File;
+
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
+
+        File cartoons = new File("cartoons");
+
+        if (cartoons.exists()) {
+            cartoons.mkdir();
+        }
 
         /*for(int i=0; i<3; i++){
             new FoxFanParser("http://rickandmorty.cn-fan.tv/season.php?id=",(i+1));
@@ -26,11 +34,11 @@ public class Main {
         for(int i=0; i<30; i++){
             new FoxFanParser("http://simpsons.fox-fan.tv/season.php?id=",(i+1));
         }
-*/
+
         for(int i=0; i<4; i++){
             new FoxFanParser("https://clevelandshow.fox-fan.tv/season.php?id=",(i+1));
         }
-//
+*/
 //        for(int i=0; i<7; i++){
 //            new FoxFanParser("https://futurama.fox-fan.tv/season.php?id=",(i+1));
 //        }
@@ -70,6 +78,10 @@ public class Main {
 //        for(int i=0; i<10; i++){
 //            new FoxFanParser("https://adventuretime.cn-fan.tv/season.php?id=",(i+1));
 //        }
+
+        for(int i=0; i<1; i++){
+            new FoxFanVideoDownloader("https://brickleberry.cc-fan.tv/season.php?id=",(i+1));
+        }
 
     }
 }
